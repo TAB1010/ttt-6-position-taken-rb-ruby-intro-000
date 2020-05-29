@@ -1,6 +1,9 @@
-board = ["X", "X", nil, "", "O", "X", "X", " ", "O"]
+require_relative '../lib/position_taken.rb'
 
-def position_taken?(board, location)
-index = board[location.to_i - 1]
+describe '#position_taken? in lib/position_taken.rb' do
+  it 'accepts a board and the index to check as arguments' do
+    board = []
+    index = 0
 
-index != " " && index != "" && index != nil
+    expect{position_taken?(board, index)}.to_not raise_error
+  end
