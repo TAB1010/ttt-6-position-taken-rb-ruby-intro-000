@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 require_relative '../lib/xo'
 
 puts "Lets play XO"
